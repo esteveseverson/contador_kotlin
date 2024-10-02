@@ -8,12 +8,38 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="@string/valor_inicial"
+        android:textSize="32sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".5" />
+
+    <Button
+        android:id="@+id/activity_main_btn_aumentar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/aumentar"
+        android:backgroundTint="@color/green"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/activity_main_btn_diminuir"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/diminuir"
+        android:backgroundTint="@color/red"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_main_btn_aumentar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
