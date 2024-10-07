@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:text="@string/btn_diminuir"
         android:textColor="@color/white"
-        android:backgroundTint="@color/red"
+        android:backgroundTint="@drawable/button_color"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         app:layout_constraintEnd_toEndOf="parent"

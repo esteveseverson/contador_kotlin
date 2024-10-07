@@ -26,13 +26,19 @@ class MainActivity : AppCompatActivity() {
         val btn_aumentar = findViewById<Button>(R.id.activity_main_btn_aumentar)
         val btn_diminuir = findViewById<Button>(R.id.activity_main_btn_diminuir)
 
+        btn_diminuir.isEnabled = false
+
         btn_aumentar.setOnClickListener{
             text_contador.text = "${++cont}"
+            btn_diminuir.isEnabled = true
         }
 
         btn_diminuir.setOnClickListener{
             if (cont >= 1) {
                 text_contador.text = "${--cont}"
+                if (cont == 0) {
+                    btn_diminuir.isEnabled = false
+                }
             }
         }
 
